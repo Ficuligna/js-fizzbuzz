@@ -24,10 +24,10 @@
 // for (var i = 0; i < 100; i++) {
 //   x = i + 1;
 //   if (x%3 == 0 && x%5 == 0) {
-//     x = "FrizzBuzz";
+//     x = "FizzBuzz";
 //   }
 //   if (x%3 == 0) {
-//     x = "Frizz";
+//     x = "Fizz";
 //   }
 //   if (x%5 == 0) {
 //     x = "Buzz";
@@ -40,7 +40,7 @@
 // var output;
 // while (x <=100) {
 //     if (x%3 == 0 && x%5 == 0) {
-//       output = "FrizzBuzz";
+//       output = "FizzBuzz";
 //     }else if (x%3 == 0) {
 //       output = "Frizz";
 //     }else if (x%5 == 0) {
@@ -57,9 +57,9 @@
 // var output;
 // do {
 //   if (x%3 == 0 && x%5 == 0) {
-//     output = "FrizzBuzz";
+//     output = "FizzBuzz";
 //   }else if (x%3 == 0) {
-//     output = "Frizz";
+//     output = "Fizz";
 //   }else if (x%5 == 0) {
 //     output = "Buzz";
 //   }else {
@@ -72,7 +72,7 @@
 
 
 // for (var i = 0; i < 100; i++) {
-//   segament = ["Frizz","Buzz"];
+//   segament = ["Fizz","Buzz"];
 //   if ((i+1)%3 == 0 && (i+1)%5 == 0) {
 //     console.log(segament);
 //   }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%3 == 0) {
@@ -89,7 +89,7 @@
 // }
 // ------------------------------------------SegamentPremium----------------------------------------------------
 // for (var i = 0; i < 100; i++) {
-//   segament = ["Frizz","Buzz"];
+//   segament = ["Fizz","Buzz"];
 //   if ((i+1)%3 == 0 && (i+1)%5 == 0) {
 //     console.log(segament);
 //   }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%3 == 0) {
@@ -104,3 +104,52 @@
 //     console.log(segament);
 //   }
 // }
+// ------------------------------------------SegamentProEvolutionSuperSayanUltimatePowerVersion-------------------------------
+var y = prompt("Inserisci qualcosa di tuo gradimento...Se ne hai il coraggio ")
+if (isNaN(y)) {
+  y = Number(isNaN(y));
+  for (i = Number(isNaN(y)); i < 100; i++) {
+    y = i+1
+    var fizzTrue = false;
+    var buzzTrue = false;
+
+
+    if((i+1) % 3 == 0){
+      fizzTrue = true;
+      y = "io sono un multiplo di 3= "+(i+1) +" il mio vero nome è: "+ "Fizz"
+    }
+    if((i+1) % 5 == 0){
+      buzzTrue = true;
+      y = "io sono un multiplo di 5= "+(i+1)+" il mio vero nome è: "+ "Buzz"
+    }
+    if(fizzTrue && buzzTrue) {
+      y = "io sono Gianfranco detto FizzBuzz "+ (i+1)
+    }
+    console.log(y);
+  }
+
+}else if (isNaN(y) == false) {
+  y = Number(isNaN(y)) + y/y;
+  for (i = Number(isNaN(y)); i < 100; i++) {
+    y = i + 1
+    var fizzTrue = false;
+    var buzzTrue = false;
+
+
+    if((i+1) % 3 == 0){
+      fizzTrue = true;
+      y = "io sono un multiplo di 3= "+(i+1) +" il mio vero nome è: "+ "Fizz";
+    }
+
+    if((i+1) % 5 == 0){
+      buzzTrue = true;
+      y = "io sono un multiplo di 5= "+(i+1)+" il mio vero nome è: "+ "Buzz";
+    }
+    if(fizzTrue && buzzTrue) {
+      y = "io sono Gianfranco detto FizzBuzz "+ (i+1);
+    }
+
+    console.log(y);
+  }
+
+}
