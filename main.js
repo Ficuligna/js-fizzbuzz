@@ -11,6 +11,15 @@
 
 
 // creo un ciclo crescente lineare da 1 a 100 con iterazione +1
+
+// ad ogni iterazione stampo il numero corrispondente
+
+// condizione 1: se i % 3 = 0 stampa Fizz
+
+//Condizione 2: se i % 5 = 0 stampa FizzBuzz
+
+// condizione 3: se condizione 1 && condizione 2 == true stampa FizzBuzz
+
 var x = 1;
 for (var i = 0; i < 100; i++) {
   x = i + 1;
@@ -26,10 +35,3 @@ for (var i = 0; i < 100; i++) {
 
   console.log(x);
 }
-// ad ogni iterazione stampo il numero corrispondente
-
-// condizione 1: se i % 3 = 0 stampa Fizz
-
-//Condizione 2: se i % 5 = 0 stampa FizzBuzz
-
-// condizione 3: se condizione 1 && condizione 2 == true stampa FizzBuzz
