@@ -68,3 +68,28 @@
 //   console.log(output);
 // x++
 // } while (x <=100);
+//--------------------------------------- Bho ----------------------------------------------------------
+
+
+for (var i = 0; i < 100; i++) {
+  segament = ["Frizz","Buzz"];
+  if ((i+1)%3 == 0 && (i+1)%5 == 0) {
+    console.log(segament);
+  }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%3 == 0) {
+    segament[1] = "";
+    console.log(segament);
+  }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%5 == 0) {
+    segament[0] = "";
+    console.log(segament);
+  }else {
+    console.log(i + 1);
+  }
+}
+
+//   var segament = ["Frizz", "Buzz"]
+//   if ((i+1)%3) {
+//     segament[1] = "";
+//   }else if ((i+1)%5)) {
+//     segament[0] = "";
+//   }
+// }
