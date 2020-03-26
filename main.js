@@ -11,27 +11,60 @@
 
 
 // creo un ciclo crescente lineare da 1 a 100 con iterazione +1
-
 // ad ogni iterazione stampo il numero corrispondente
-
 // condizione 1: se i % 3 = 0 stampa Fizz
-
 //Condizione 2: se i % 5 = 0 stampa FizzBuzz
-
 // condizione 3: se condizione 1 && condizione 2 == true stampa FizzBuzz
 
-var x = 1;
-for (var i = 0; i < 100; i++) {
-  x = i + 1;
-  if (x%3 == 0 && x%5 == 0) {
-    x = "FrizzBuzz";
-  }
-  if (x%3 == 0) {
-    x = "Frizz";
-  }
-  if (x%5 == 0) {
-    x = "Buzz";
-  }
 
-  console.log(x);
-}
+
+// ---------------------------------- Variante con for --------------------------------------------------
+
+// var x = 1;
+// for (var i = 0; i < 100; i++) {
+//   x = i + 1;
+//   if (x%3 == 0 && x%5 == 0) {
+//     x = "FrizzBuzz";
+//   }
+//   if (x%3 == 0) {
+//     x = "Frizz";
+//   }
+//   if (x%5 == 0) {
+//     x = "Buzz";
+//   }
+//
+//   console.log(x);
+// }
+// ---------------------------------- Variante con while --------------------------------------------------
+// var x = 1;
+// var output;
+// while (x <=100) {
+//     if (x%3 == 0 && x%5 == 0) {
+//       output = "FrizzBuzz";
+//     }else if (x%3 == 0) {
+//       output = "Frizz";
+//     }else if (x%5 == 0) {
+//       output = "Buzz";
+//     }else {
+//       output = x;
+//     }
+//     console.log(output);
+//   x++
+// }
+
+// ---------------------------------- Variante con do-while --------------------------------------------------
+// var x = 1;
+// var output;
+// do {
+//   if (x%3 == 0 && x%5 == 0) {
+//     output = "FrizzBuzz";
+//   }else if (x%3 == 0) {
+//     output = "Frizz";
+//   }else if (x%5 == 0) {
+//     output = "Buzz";
+//   }else {
+//     output = x;
+//   }
+//   console.log(output);
+// x++
+// } while (x <=100);
