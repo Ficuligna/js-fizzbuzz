@@ -68,23 +68,39 @@
 //   console.log(output);
 // x++
 // } while (x <=100);
-//--------------------------------------- Bho ----------------------------------------------------------
+//--------------------------------------- Segament ----------------------------------------------------------
 
 
-for (var i = 0; i < 100; i++) {
-  segament = ["Frizz","Buzz"];
-  if ((i+1)%3 == 0 && (i+1)%5 == 0) {
-    console.log(segament);
-  }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%3 == 0) {
-    segament[1] = "";
-    console.log(segament);
-  }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%5 == 0) {
-    segament[0] = "";
-    console.log(segament);
-  }else {
-    segament[1] = "";
-    segament[0] = i+1;
-
-    console.log(segament);
-  }
-}
+// for (var i = 0; i < 100; i++) {
+//   segament = ["Frizz","Buzz"];
+//   if ((i+1)%3 == 0 && (i+1)%5 == 0) {
+//     console.log(segament);
+//   }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%3 == 0) {
+//     segament[1] = "";
+//     console.log(segament);
+//   }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%5 == 0) {
+//     segament[0] = "";
+//     console.log(segament);
+//   }else {
+//     segament[1] = "";
+//     segament[0] = i+1;
+//     console.log(segament);
+//   }
+// }
+// ------------------------------------------SegamentPremium----------------------------------------------------
+// for (var i = 0; i < 100; i++) {
+//   segament = ["Frizz","Buzz"];
+//   if ((i+1)%3 == 0 && (i+1)%5 == 0) {
+//     console.log(segament);
+//   }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%3 == 0) {
+//     segament.splice(1,1);
+//     console.log(segament);
+//   }else if (!((i+1)%3 == 0 && (i+1)%5 == 0) && (i+1)%5 == 0) {
+//     segament.splice(0,1);
+//     console.log(segament);
+//   }else {
+//     segament.splice(1,1);
+//     segament[0] = i+1;
+//     console.log(segament);
+//   }
+// }
